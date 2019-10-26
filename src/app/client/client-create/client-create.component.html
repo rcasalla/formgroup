@@ -24,12 +24,12 @@
      class="form-control"
      formControlName="address"
      placeholder="Your Address">
-  </div>
+
 		<div class="alert alert-danger alert-dismissible fade show"
 			*ngIf="clientForm.get('address').hasError('required') && clientForm.get('address').touched">
 			Address required
 		</div>
-
-		<button class="button mx-sm-3 mb-2" type="submit" [disabled]="clientForm.invalid">Create</button>
+	</div>
+	<button class="button mx-sm-3 mb-2" type="submit" [disabled]="clientForm.invalid">Create</button>
 
 </form>
