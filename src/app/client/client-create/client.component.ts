@@ -9,7 +9,7 @@ import { ClientService } from "../client.service";
   styleUrls: ["./client.component.css"]
 })
 export class ClientComponent {
-  clientForm: Client;
+  clientForm: FormGroup;
 
   constructor(
     private clientService: ClientService,
@@ -25,7 +25,7 @@ export class ClientComponent {
     // Process checkout data here
     console.warn("Your order has been submitted", newClient);
 
-    this.clientForm.reset();
+   this.clientForm.reset();
   }
 }
 

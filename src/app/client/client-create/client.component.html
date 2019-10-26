@@ -26,7 +26,7 @@
      placeholder="Your Address">
   </div>
 		<div class="alert alert-danger alert-dismissible fade show"
-			*ngIf="clientForm.get('name').hasError('required') && clientForm.get('name').touched">
+			*ngIf="clientForm.get('address').hasError('required') && clientForm.get('address').touched">
 			Address required
 		</div>
 
