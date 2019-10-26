@@ -4,11 +4,11 @@ import { Client } from "../client";
 import { ClientService } from "../client.service";
 
 @Component({
-  selector: "app-client",
-  templateUrl: "./client.component.html",
-  styleUrls: ["./client.component.css"]
+  selector: "app-client-create",
+  templateUrl: "./client-create.component.html",
+  styleUrls: ["./client-create.component.css"]
 })
-export class ClientComponent {
+export class ClientCreateComponent {
   clientForm: FormGroup;
 
   constructor(
